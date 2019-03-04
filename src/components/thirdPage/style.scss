@@ -1,0 +1,26 @@
+.Third {
+  background: rgb(247, 199, 109);
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 49% 51%;
+}
+
+.About {
+  width: 90%;
+  height: 90%;
+  align-self: center;
+  justify-self: center;
+}
+.Contact {
+  background: darkslategray;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .contactIn {
+    border: red 5px solid;
+    width: 90%;
+    height: 90%;
+    
+  }
+}

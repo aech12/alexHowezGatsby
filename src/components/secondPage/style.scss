@@ -1,0 +1,28 @@
+%addBorder {
+  border: 3px rgb(93, 3, 26) solid;
+}
+
+.Second {
+  background: rgb(109, 247, 132);
+  height: 102vh;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: repeat(2, 50%);
+}
+
+.Projects {
+  @extend %addBorder;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  justify-self: center;
+  align-self: center;
+  width: 95%;
+  height: 95%;
+  position: relative;
+}
+.Github {
+  @extend %addBorder;
+}
+.Tools {
+  @extend %addBorder;
+}

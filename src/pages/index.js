@@ -1,21 +1,43 @@
 import React from "react"
-import { Link } from "gatsby"
+import First from "../components/firstPage/First.js"
+import Second from "../components/secondPage/Second.js"
+import Third from "../components/thirdPage/Third.js"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Intro from '../components/firstPage/intro.js'
+import IntroGallery from '../components/firstPage/introGallery.js'
+import Links from '../components/firstPage/links.js'
+import Github from '../components/secondPage/github.js'
+import Projects from '../components/secondPage/projects.js'
+import Tools from '../components/secondPage/tools.js'
+import About from '../components/thirdPage/about.js'
+import Contact from '../components/thirdPage/contact.js'
+
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+  <div>
+    <First>
+      <Intro/>
+      <Links/>
+      <IntroGallery/>
+    </First>
+    <Second>
+      <Projects/>
+      <Github/>
+      <Tools/>
+    </Second>
+    <Third>
+      <About/>
+      <Contact/>
+    </Third>
+    {/* <Layout>
+      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+      <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+        <Image />
+      </div>
+      <Link to="/page-2/">Go to page 2</Link>
+      <Link to='/first/'>Go to First</Link>
+    </Layout> */}
+  </div>
 )
 
 export default IndexPage
