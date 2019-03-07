@@ -11,6 +11,7 @@ import Projects from '../components/secondPage/projects.js'
 import Tools from '../components/secondPage/tools.js'
 import About from '../components/thirdPage/about.js'
 import Contact from '../components/thirdPage/contact.js'
+import Footer from '../components/footer/Footer.js'
 
 
 const IndexPage = () => (
@@ -29,6 +30,7 @@ const IndexPage = () => (
       <About/>
       <Contact/>
     </Third>
+    <Footer/>
     {/* <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>

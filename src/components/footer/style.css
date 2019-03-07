@@ -1,0 +1,21 @@
+.Footer {
+  background: rgb(16, 22, 16);
+  text-align: center;
+}
+
+.icons {
+  padding-top: 10px;
+}
+.iconsMsg {
+  padding: 0;
+  color: rgb(156, 156, 156);
+}
+
+a {
+  color: grey;
+}
+
+img {
+  padding: 10px;
+  margin: 0;
+}

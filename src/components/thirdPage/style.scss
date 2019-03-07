@@ -1,26 +1,95 @@
-.Third {
-  background: rgb(247, 199, 109);
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 49% 51%;
+$marroncito: rgb(247, 199, 109);
+$marroscuro: rgb(27, 29, 28);
+%titleFont {
+  font-family: 'Quicksand';
+  font-size: 2rem;
+  font-weight: normal;
+  text-decoration: underline;
+}
+h4 {
+  @extend %titleFont;
+}
+p {
+  font-family: 'Segoe UI';
+  margin: 0;
 }
 
+
 .About {
-  width: 90%;
-  height: 90%;
-  align-self: center;
-  justify-self: center;
+  background: $marroncito;
+  .firstText {
+    padding: 0px 15px;
+  }
+  .secondText {
+    padding-top: 10px;
+    font-weight: bold;
+  }
+  .thirdText {
+    padding: 0px 15px 10px 15px;
+    font-weight: 500;
+  }
 }
+
 .Contact {
   background: darkslategray;
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  .contactIn {
-    border: red 5px solid;
-    width: 90%;
-    height: 90%;
     
+  .form {
+    text-align: center;
+    margin: 0;
+    input, textarea {
+      width: 80%;
+      color: wheat;
+      border: $marroscuro solid;
+      border-radius: 5px;
+      background: $marroscuro;
+      outline: none;
+    }
+    textarea {
+      min-height: 200px;
+    }
+    button {
+      outline: none;
+      border-radius: 5px;
+      background: $marroscuro;
+      color: white;
+      width: 80%;
+      border: 0;
+
+    }
+  }
+}
+
+
+
+
+
+@media all and (min-width: 1024px) {
+  .Third {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 49% 51%;
+  }
+
+  .About {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h4 {
+      // padding: 0px 0px;
+    }
+    p {
+      line-height: 40px;
+      width: 85%;
+      padding: 0px 45px;
+    }
+  }
+
+  .Contact {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
