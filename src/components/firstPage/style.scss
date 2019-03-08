@@ -35,6 +35,10 @@ a {
 .Links {
   .linksTop {
     display: none;
+    a:hover {
+      color: darkslategray;
+      transition: .2s;
+    }
   }
   .linksBottom {
     text-align: center;
