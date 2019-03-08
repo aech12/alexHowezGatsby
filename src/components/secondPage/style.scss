@@ -24,10 +24,10 @@ $marroscuro: rgb(27, 29, 28);
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 1s .25s;
     img {
       margin: 0;
       padding: 0;
-      transition: 1s .5s;
     }
     .p-over {
       position: absolute;
@@ -36,20 +36,19 @@ $marroscuro: rgb(27, 29, 28);
       height: 100%;
       width: 100%;
       opacity: 0;
-      background-color: $marroncito;
+      background-color: darkslategray;
       transition: .5s ease;
       .p-in {
         font-family: 'Segoe UI';
 
-        color: black;
+        color: white;
         transition: 1s ease;
       }
     }
   }
   a:hover {
-    img {
-      transform: scale(1.1);
-    }
+    transform: scale(1.2);
+    z-index: 1;
     .p-over {
       opacity: .9;
       .p-in {
