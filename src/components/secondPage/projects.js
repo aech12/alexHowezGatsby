@@ -1,4 +1,4 @@
-import React, {Component} from "react"
+import React from "react"
 import {projectsDescArr} from './projectsDescArr.js'
 import Bootstrap from '../../images/imgsProjects/Bootstrap.png'
 import Smartbrain from '../../images/imgsProjects/Smartbrain.png'
@@ -12,25 +12,32 @@ import './style.scss'
 const Projects = () => (
   <div className='Projects' id='Projects'>
     <a href='https://aech12.github.io/Bootstrap1/'>
-      <img src={Bootstrap} title={projectsDescArr[0].title}/>
+      <img alt='bootstrap' src={Bootstrap}/>
+      <div className='p-over'><p className='p-in'>{projectsDescArr[0].title}</p></div>
     </a>
     <a href='https://aech12.github.io/smart-brain/'>
-      <img src={Smartbrain}/>
+      <img alt='smartbrain' src={Smartbrain}/>
+      <div className='p-over'><p className='p-in'>{projectsDescArr[1].title}</p></div>
     </a>
     <a href='https://aech12.github.io/Robofriends-reference/'>
-      <img src={Robofriends}/>
+      <img alt='robofriends' src={Robofriends}/>
+      <div className='p-over'><p className='p-in'>{projectsDescArr[2].title}</p></div>
     </a>
     <a href='https://aech12.github.io/chatRoom/'>
-      <img src={Chatapp}/>
+      <img alt='chatapp' src={Chatapp}/>
+      <div className='p-over'><p className='p-in'>{projectsDescArr[3].title}</p></div>
     </a>
     <a href='https://aech12.github.io/tictactoe/'>
-      <img src={Tictactoe}/>
+      <img alt='tictactoe' src={Tictactoe}/>
+      <div className='p-over'><p className='p-in'>{projectsDescArr[4].title}</p></div>
     </a>
     <a href='https://aech12.github.io/cardGuessGame/'>
-      <img src={Guessnum}/>    
+      <img alt='guessnum' src={Guessnum}/>
+      <div className='p-over'><p className='p-in'>{projectsDescArr[5].title}</p></div>
     </a>
     <a href='https://aech12.github.io/flagGuessingGame/'>
-      <img src={Guessflag}/>    
+      <img alt='guessflag' src={Guessflag}/>
+      <div className='p-over'><p className='p-in'>{projectsDescArr[6].title}</p></div>
     </a>
   </div>
 )

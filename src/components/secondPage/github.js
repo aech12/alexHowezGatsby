@@ -2,7 +2,7 @@ import React from "react"
 import apiImg from './api.png'
 const Github = () => (
   <div className='Github'>
-    <img src={apiImg}/>
+    <img alt='apiimg' src={apiImg}/>
     <p>Using and staying up to date with important APIs, including the Shopify and Google Maps APIs.</p>
   </div>
 )

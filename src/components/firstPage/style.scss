@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Questrial|Quicksand');
 $marroncito: rgb(247, 199, 109);
 
+html {
+  scroll-behavior: smooth;
+}
 a {
   text-decoration: none;
 }
@@ -26,6 +29,7 @@ a {
     letter-spacing: 0;
   }
 }
+
 
 
 .Links {
