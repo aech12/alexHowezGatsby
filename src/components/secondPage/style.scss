@@ -6,6 +6,7 @@ $marroscuro: rgb(27, 29, 28);
 
 
 .Second {
+  background: none;
 }
   
 .Projects {
@@ -26,6 +27,7 @@ $marroscuro: rgb(27, 29, 28);
     img {
       margin: 0;
       padding: 0;
+      transition: 1s .5s;
     }
     .p-over {
       position: absolute;
@@ -45,9 +47,9 @@ $marroscuro: rgb(27, 29, 28);
     }
   }
   a:hover {
-    // img {
-    //   // transform: translateX(-100%);
-    // }
+    img {
+      transform: scale(1.1);
+    }
     .p-over {
       opacity: .9;
       .p-in {

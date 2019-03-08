@@ -53,10 +53,17 @@ a {
       height: 100px;
       margin: 0;
     }
-      p {
-        margin: 10px;
-      }
+    p {
+      margin: 10px;
     }
+  }
+  .Card:hover {
+    background: darkslategray;
+    opacity: .7;
+    transition: .5s;
+    color: white;
+    text-shadow: 2px 2px black
+  }
 }
 
 
