@@ -12,16 +12,17 @@ const Contact = () => (
         <div data-netlify-recaptcha="true"></div>
         <div className='subject'>
           <p>Your name</p>
-          <input name='subject'/>
+          <input name='subject' type='text'/>
         </div>
         <div className='from'>
           <p>Your email</p>
-          <input name='email' placeholder='mail@mail.com'/>
+          <input name='email' type='email'
+          placeholder='mail@mail.com'/>
         </div>
         <div className='yourMessage'>
           <p>Your message</p>
           <textarea 
-            name='message'
+            name='message' type='text'
             placeholder={`If you want to work with me or ask about something, feel free to email me`}
           />
         </div>
