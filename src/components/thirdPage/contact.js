@@ -10,7 +10,7 @@ const Contact = () => (
       data-netlify='true' data-netlify-honeypot='bot-field'
       data-netlify-recaptcha="true"
       action="#">
-        <div data-netlify-recaptcha="true"></div>
+        {/* <div data-netlify-recaptcha="true"></div> */}
         <input type="hidden" name="bot-field" />
         <div className='subject'>
           <p>Your name</p>
