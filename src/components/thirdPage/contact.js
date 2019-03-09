@@ -28,7 +28,10 @@ const Contact = () => (
             placeholder={`If you want to work with me or ask about something, feel free to email me`}
           ></textarea>
         </div>
-        <button type='submit'>SEND</button>
+        {/* <button type='submit'>SEND</button> */}
+        <ul className="actions button">
+          <li><input type="submit" value="Send Message" className="special" /></li>
+        </ul>
       </form>
       <p style={{textAlign: `center`}}>(or email me at aech-12@hotmail.com)</p>
     </div>
