@@ -12,7 +12,7 @@ const Contact = () => (
         {/* <div data-netlify-recaptcha="true"></div> */}
         {/* <div className='subject'>
           <p>Your name</p> */}
-          <input name='subject' type='text'/>
+          <input style={{width:'50px', height:'50px'}} name='subject' type='text'/>
         {/* </div>
         <div className='from'>
           <p>Your email</p>
