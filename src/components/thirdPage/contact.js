@@ -9,11 +9,11 @@ const Contact = () => (
       method='post' name='contactAHGats' 
       data-netlify='true' data-netlify-honeypot='bot-field'
       data-netlify-recaptcha="true">
-        {/* <div data-netlify-recaptcha="true"></div> */}
-        {/* <div className='subject'>
-          <p>Your name</p> */}
+        <div data-netlify-recaptcha="true"></div>
+        <div className='subject'>
+          <p>Your name</p>
           <input style={{width:'50px', height:'50px'}} name='subject' type='text'/>
-        {/* </div>
+        </div>
         <div className='from'>
           <p>Your email</p>
           <input name='email' type='email'
@@ -25,7 +25,7 @@ const Contact = () => (
             name='message' type='text'
             placeholder={`If you want to work with me or ask about something, feel free to email me`}
           />
-        </div> */}
+        </div>
         <button type='submit'>SEND</button>
       </form>
       <p style={{textAlign: `center`}}>(or email me at aech-12@hotmail.com)</p>
