@@ -35,9 +35,12 @@ a {
 .Links {
   .linksTop {
     display: none;
-    a:hover {
-      color: darkslategray;
-      transition: .2s;
+    a {
+      text-decoration: underline;
+      p:hover {
+        color: rgb(0, 121, 121);
+        transition: .2s;
+      }
     }
   }
   .linksBottom {
