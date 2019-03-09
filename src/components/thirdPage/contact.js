@@ -5,43 +5,63 @@ const Contact = () => (
   <div className='Contact' id='Contact'>
     <div className='contactIn'>
       <h4>Contact me</h4>
-      <form className='form'
-      method='post' name='contactMe' 
-      data-netlify='true' data-netlify-honeypot='bot-field'
-      data-netlify-recaptcha="true"
-      action="#">
-        {/* <div data-netlify-recaptcha="true"></div> */}
+      
+      <form method="post" action="#" name="contactMe" method="post" 
+      data-netlify="true" data-netlify-honeypot="bot-field"
+      className='form' data-netlify-recaptcha="true">
+        <div data-netlify-recaptcha="true"></div>
         <input type="hidden" name="bot-field" />
-        <div className='subject'>
-          <p>Your name</p>
-          <input style={{width:'50px', height:'50px'}} name='subject' type='text'/>
+        <div className="field half first subject">
+            <label htmlFor="name"><p>Your name</p></label>
+            <input type="text" name="name" id="name" />
         </div>
-        <div className='from'>
-          <p>Your email</p>
-          <input name='email' type='email'
-          placeholder='mail@mail.com'/>
+        <div className="field half" className='from'>
+            <label htmlFor="email"><p>Your email</p></label>
+            <input type="text" name="email" id="email" placeholder='mail@mail.com'/>
         </div>
-        <div className='yourMessage'>
-          <p>Your message</p>
-          <textarea 
-            name='message' type='text'
-            placeholder={`If you want to work with me or ask about something, feel free to email me`}
-          ></textarea>
+        <div className="yourMessage">
+            <label htmlFor="message"><p>Your message</p></label>
+            <textarea name="message" id="message"
+            placeholder={`Want to work with me or ask about something?`}></textarea>
         </div>
-        {/* <button type='submit'>SEND</button> */}
-        <ul className="actions button">
-          <li><input type="submit" value="Send Message" className="special" /></li>
+        <ul className="actions">
+            <li><input type="submit" value="Send Message" className="special button" /></li>
+            {/* <li><input type="reset" value="Clear" /></li> */}
         </ul>
       </form>
+
       <p style={{textAlign: `center`}}>(or email me at aech-12@hotmail.com)</p>
     </div>
   </div>
 )
-
+/* eslint-disable */
 export default Contact
 
+{/* <form className='form'
+  method='post' name='contactAHGats' 
+  data-netlify='true' data-netlify-honeypot='bot-field'
+  data-netlify-recaptcha="true">
+    <div data-netlify-recaptcha="true"></div>
+    <div className='subject'>
+      <p>Your name</p>
+      <input name='subject' type='text'/>
+    </div>
+    <div className='from'>
+      <p>Your email</p>
+      <input name='email' type='email'
+      placeholder='mail@mail.com'/>
+    </div>
+    <div className='yourMessage'>
+      <p>Your message</p>
+      <textarea 
+        name='message' type='text'
+        placeholder={`Want to work with me or ask about something?`}
+      />
+    </div>
+    <button type='submit'>SEND</button>
+  </form> */}
 
-{/* <form method="post"  name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+{/* <form method="post" action="#" name="contactMe" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
       <input type="hidden" name="bot-field" />
     <div className="field half first">
         <label htmlFor="name">Name</label>
