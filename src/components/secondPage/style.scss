@@ -24,7 +24,7 @@ $marroscuro: rgb(27, 29, 28);
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 1s .25s;
+    transition: .5s .25s;
     img {
       margin: 0;
       padding: 0;
@@ -47,7 +47,7 @@ $marroscuro: rgb(27, 29, 28);
     }
   }
   a:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     z-index: 1;
     .p-over {
       opacity: .9;

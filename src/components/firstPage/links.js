@@ -13,7 +13,7 @@ const Links = () => (
     </div>
     <div className='linksBottom'>
       <a href='https://www.linkedin.com/in/aech12/'><img src={`${linkedin}`} alt='linkedin'/></a>
-      <a href='google.com'><img src={`${pdf}`} alt='pdf'/></a>
+      <a href='https://drive.google.com/open?id=1g27UYtGpbVP0Z9HZNHtdiHHYlP3Gm78h'><img src={`${pdf}`} alt='pdf'/></a>
     </div>
   </div>
 )

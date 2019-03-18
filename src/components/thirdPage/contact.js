@@ -6,7 +6,7 @@ const Contact = () => (
     <div className='contactIn'>
       <h4>Contact me</h4>
       
-      <form method="post" action="#" name="contactMe" method="post" 
+      <form method="post" action="#" name="contactMe"  
       data-netlify="true" data-netlify-honeypot="bot-field"
       className='form'>
         <input type="hidden" name="bot-field" />
@@ -14,7 +14,7 @@ const Contact = () => (
             <label htmlFor="name"><p>Your name</p></label>
             <input type="text" name="name" id="name" />
         </div>
-        <div className="field half" className='from'>
+        <div className="field half from">
             <label htmlFor="email"><p>Your email</p></label>
             <input type="text" name="email" id="email" placeholder='mail@mail.com'/>
         </div>

@@ -12,10 +12,17 @@ import Tools from '../components/secondPage/tools.js'
 import About from '../components/thirdPage/about.js'
 import Contact from '../components/thirdPage/contact.js'
 import Footer from '../components/footer/Footer.js'
-
+// import Headroom from '../components/headroom'
 
 const IndexPage = () => (
   <div>
+    {/* <Headroom 
+      style={{background:'black',color:'white'}}
+      onPin={() => console.log('pinned')}
+      onUnpin={() => console.log('unpinned')}
+    >
+      <h1>Hiiiiii</h1>
+    </Headroom> */}
     <First>
       <Intro/>
       <Links/>
